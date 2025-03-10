@@ -1,3 +1,92 @@
 textarea {
     min-height: 400px;
 }
+
+/* Email container styling */
+.emails-container {
+    margin-top: 10px;
+}
+
+/* Email item styling */
+.email {
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email:hover {
+    background-color: #f8f9fa;
+}
+
+/* Unread email styling */
+.email.unread {
+    background-color: white;
+    font-weight: bold;
+}
+
+/* Read email styling */
+.email.read {
+    background-color: #f1f1f1;
+}
+
+/* Email details styling */
+.email-sender {
+    flex: 0 0 30%;
+}
+
+.email-subject {
+    flex: 0 0 40%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.email-timestamp {
+    flex: 0 0 30%;
+    text-align: right;
+    color: #6c757d;
+    font-size: 0.9em;
+}
+
+/* Email detail view */
+.email-detail {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.email-body {
+    margin-top: 20px;
+    white-space: pre-wrap;
+}
+
+.email-actions {
+    margin-bottom: 20px;
+}
+
+.email-actions button {
+    margin-right: 10px;
+}
+
+/* Loading and error messages */
+#loading-indicator, #sending-indicator {
+    margin: 20px 0;
+    color: #6c757d;
+}
+
+.error-message {
+    color: #dc3545;
+    margin: 20px 0;
+}
+
+.no-emails-message {
+    margin: 20px 0;
+    color: #6c757d;
+    font-style: italic;
+}
