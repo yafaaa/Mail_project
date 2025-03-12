@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Add event listener for compose form submission
   document.querySelector('#compose-form').addEventListener('submit', send_email);
 
-  // By default, load the inbox
+  // By default, load the inboxs
   load_mailbox('inbox');
 });
 
