@@ -101,3 +101,13 @@ textarea {
     justify-content: space-between;
     align-items: center;
 }
+/* Unread email styling */
+.email.unread {
+    background-color: white;
+    font-weight: bold;
+}
+
+/* Read email styling */
+.email.read {
+    background-color: #f1f1f1;
+}
